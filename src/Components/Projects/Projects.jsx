@@ -6,6 +6,9 @@ import print3 from "../../assets/prints/print3.png"
 import print4 from "../../assets/prints/print4.jpg"
 import print5 from "../../assets/prints/print5.jpg"
 import print6 from "../../assets/prints/print6.jpg"
+import print7 from "../../assets/prints/print7.jpg"
+import print8 from "../../assets/prints/print8.jpg"
+
 
 function Projects() {
   const projetos = [
@@ -19,7 +22,7 @@ function Projects() {
       destaque: true,
     },
     {
-      titulo: "GrizzyFlyes",
+      titulo: "Projeto de viagem",
       descricao: "App de viagens em React para explorar destinos, filtrar por localização, selecionar datas, gerenciar carrinho e finalizar pedidos com cálculo dinâmico.",
       tecnologias: ["React", "JavaScript", "CSS"],
       github: "https://github.com/gabrieldev25789/projeto-viagem",
@@ -28,7 +31,7 @@ function Projects() {
       destaque: true,
     },
     {
-      titulo: "GameVault",
+      titulo: "Biblioteca de jogos",
       descricao: "Gerenciador de biblioteca de jogos com autenticação, favoritos, busca, ordenação e upload de imagens com persistência via localStorage.",
       tecnologias: ["React", "JavaScript", "CSS", "React Router"],
       github: "https://github.com/gabrieldev25789/CRUD-jogos",
@@ -37,7 +40,7 @@ function Projects() {
       destaque: true,
     },
     {
-      titulo: "Loja de Produtos",
+      titulo: "Loja",
       descricao: "Loja com filtros de promoção e categoria, carrinho de compras e descontos por forma de pagamento.",
       tecnologias: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/gabrieldev25789/Loja-produtos",
@@ -46,7 +49,7 @@ function Projects() {
       destaque: false,
     },
     {
-      titulo: "Calculadora IMC",
+      titulo: "Calculadora IMC avançada",
       descricao: "Calculadora de IMC avançada com metas de perda/ganho de peso e plano de treino semanal personalizado para cada objetivo.",
       tecnologias: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/gabrieldev25789/calculadora-imc-avancada",
@@ -55,12 +58,32 @@ function Projects() {
       destaque: false,
     },
     {
-      titulo: "Sistema Hospital",
+      titulo: "Sistema de Hospital",
       descricao: "CRUD de pacientes com controle de acesso via token, validações de formulário e gerenciamento completo de dados.",
       tecnologias: ["JavaScript", "HTML", "CSS"],
       github: "https://github.com/gabrieldev25789/sistema-hospital",
       demo: "https://sistema-hospital-nu.vercel.app/",
       preview: print6,
+      destaque: false,
+    },
+
+    {
+      titulo: "Api TMDB",
+      descricao: "Este projeto tem como objetivo consumir a API do TMDB (The Movie Database) para exibir informações sobre filmes e séries (Projeto em inglês).",
+      tecnologias: ["JavaScript", "HTML", "CSS", "API REST"],
+      github: "https://github.com/gabrieldev25789/projeto-api-tmdb",
+      demo: "https://projeto-api-tmdb.vercel.app/",
+      preview: print8,
+      destaque: false,
+    },
+
+    {
+      titulo: "Api receitas",
+      descricao: "Um projeto front-end que consome dados de receitas de uma API e exibe informações detalhadas sobre (Projeto em inglês).",
+      tecnologias: ["JavaScript", "HTML", "CSS", "API REST"],
+      github: "https://github.com/gabrieldev25789/Pratos-Receitas-API",
+      demo: "https://pratos-receitas-api.vercel.app/",
+      preview: print7,
       destaque: false,
     },
   ]
