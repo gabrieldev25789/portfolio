@@ -1,0 +1,203 @@
+.skills {
+  background: var(--bg);
+  padding: 7rem 0;
+  position: relative;
+}
+
+.skills::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+}
+
+/* ── Inner ─────────────────────────────────────────── */
+.skills__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Cabeçalho ─────────────────────────────────────── */
+.skills__cabecalho {
+  margin-bottom: 3.5rem;
+  max-width: 600px;
+}
+
+.skills__tag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.skills__titulo {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin: 0 0 1rem;
+}
+
+.skills__subtitulo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ── Grid 2x2 ──────────────────────────────────────── */
+.skills__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+/* ── Card ──────────────────────────────────────────── */
+.skills__card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  transition: border-color 0.25s, transform 0.25s, box-shadow 0.25s;
+}
+
+.skills__card:hover {
+  border-color: rgba(124, 106, 255, 0.35);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
+}
+
+.skills__card--proximo {
+  border-color: rgba(124, 106, 255, 0.2);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(124, 106, 255, 0.05) 100%);
+}
+
+.skills__card--soft {
+  border-color: rgba(74, 222, 128, 0.15);
+  background: linear-gradient(135deg, var(--surface) 0%, rgba(74, 222, 128, 0.03) 100%);
+}
+
+/* ── Cabeçalho do card ─────────────────────────────── */
+.skills__card-cabecalho {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.skills__card-icone {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.skills__card-titulo {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin: 0;
+  letter-spacing: -0.02em;
+}
+
+/* ── Lista ─────────────────────────────────────────── */
+.skills__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.skills__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.skills__item:hover {
+  border-color: rgba(124, 106, 255, 0.3);
+  transform: translateX(4px);
+}
+
+.skills__nome {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── Níveis ────────────────────────────────────────── */
+.skills__nivel {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  letter-spacing: 0.03em;
+}
+
+.nivel--basico {
+  background: rgba(251, 191, 36, 0.1);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.nivel--intermediario {
+  background: rgba(74, 222, 128, 0.1);
+  color: #4ade80;
+  border: 1px solid rgba(74, 222, 128, 0.2);
+}
+
+.nivel--proximo {
+  background: rgba(124, 106, 255, 0.1);
+  color: var(--accent);
+  border: 1px solid rgba(124, 106, 255, 0.2);
+}
+
+.nivel--progresso {
+  background: rgba(251, 146, 60, 0.1);
+  color: #fb923c;
+  border: 1px solid rgba(251, 146, 60, 0.2);
+}
+
+/* ── Estrelas soft skills ──────────────────────────── */
+.skills__estrelas {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  opacity: 0.85;
+}
+
+/* ── Texto próximo passo ───────────────────────────── */
+.skills__proximo-texto {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+  font-style: italic;
+}
+
+/* ── Responsivo ────────────────────────────────────── */
+@media (max-width: 700px) {
+  .skills__grid {
+    grid-template-columns: 1fr;
+  }
+}

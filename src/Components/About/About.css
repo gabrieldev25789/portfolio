@@ -1,0 +1,206 @@
+.sobre {
+  background: var(--bg);
+  padding: 7rem 0;
+  position: relative;
+}
+
+.sobre::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent), transparent);
+  opacity: 0.3;
+}
+
+/* ── Inner ─────────────────────────────────────────── */
+.sobre__inner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* ── Cabeçalho ─────────────────────────────────────── */
+.sobre__cabecalho {
+  margin-bottom: 3.5rem;
+}
+
+.sobre__tag {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--accent);
+  letter-spacing: 0.06em;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.sobre__titulo {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+/* ── Layout ────────────────────────────────────────── */
+.sobre__conteudo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+/* ── Texto ─────────────────────────────────────────── */
+.sobre__texto {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.sobre__paragrafo {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.sobre__paragrafo strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.sobre__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-decoration: none;
+  margin-top: 0.5rem;
+  transition: gap 0.2s, opacity 0.2s;
+}
+
+.sobre__btn:hover {
+  gap: 0.75rem;
+  opacity: 0.8;
+}
+
+/* ── Stats ─────────────────────────────────────────── */
+.sobre__direita {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.sobre__stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.sobre__stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.sobre__stat-card:hover {
+  border-color: rgba(124, 106, 255, 0.3);
+  transform: translateY(-3px);
+}
+
+.sobre__stat-numero {
+  font-family: var(--font-mono);
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.sobre__stat-rotulo {
+  font-family: var(--font-display);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* ── Tecnologias ───────────────────────────────────── */
+.sobre__techs {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.sobre__techs-titulo {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.sobre__techs-lista {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.sobre__tech-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.sobre__tech-item:hover {
+  border-color: rgba(124, 106, 255, 0.3);
+  transform: translateX(4px);
+}
+
+.sobre__tech-icone {
+  font-size: 1.1rem;
+}
+
+.sobre__tech-nome {
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  color: var(--text);
+  font-weight: 500;
+}
+
+/* ── Responsivo ────────────────────────────────────── */
+@media (max-width: 768px) {
+  .sobre__conteudo {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .sobre__stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
