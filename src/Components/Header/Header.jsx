@@ -11,7 +11,12 @@ function Header() {
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  const navLinks = ["About", "Projects", "Skills", "Contact"]
+  const navLinks = [
+  { label: "Sobre",    href: "about"    },
+  { label: "Projetos", href: "projects" },
+  { label: "Skills",   href: "skills"   },
+  { label: "Contato",  href: "contact"  },
+]
 
   return (
     <header className={`header ${scrolled ? "header--scrolled" : ""}`}>
@@ -24,20 +29,18 @@ function Header() {
 
         <nav className={`header__nav ${menuOpen ? "header__nav--open" : ""}`}>
           {navLinks.map((link, i) => (
-            <a 
-              key={link}
-              href={`#${link.toLowerCase()}`}
+            <a
+              key={link.href}
+              href={`#${link.href}`}
               className="header__nav-link"
               style={{ "--i": i }}
               onClick={() => setMenuOpen(false)}
             >
               <span className="header__nav-link-num">0{i + 1}.</span>
-              {link}
+              {link.label}
             </a>
           ))}
-          <a href="#contact" className="header__cta" onClick={() => setMenuOpen(false)}>
-            Hire Me
-          </a>
+
         </nav>
 
         <button

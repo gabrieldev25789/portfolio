@@ -2,7 +2,7 @@ import "./About.css"
 
 function About() {
   const estatisticas = [
-    { numero: "1,5+", rotulo: "Anos de Estudo" },
+    { numero: "1,4", rotulo: "Anos de Estudo" },
     { numero: "8",    rotulo: "Projetos Feitos" },
     { numero: "4",    rotulo: "Tecnologias" },
   ]

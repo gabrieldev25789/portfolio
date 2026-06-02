@@ -2,7 +2,7 @@ import "./Hero.css"
 import { useEffect, useState } from "react"
 import foto from"../../assets/foto/foto.jpg"
 
-const cargos = ["Desenvolvedor Front End", "Buscando evoluir", "Solucionador de Problemas"]
+const cargos = ["Desenvolvedor Front End", "Buscando evoluir sempre", "Solucionando Problemas"]
 
 function Hero() {
   const [indiceCargo, setIndiceCargo] = useState(0)
@@ -56,7 +56,7 @@ useEffect(() => {
 
           {/* Botões */}
           <div className="hero__acoes">
-            <a href="#projetos" className="hero__btn hero__btn--primario">
+            <a href="#projects" className="hero__btn hero__btn--primario">
               Ver Projetos
               <span className="hero__btn-seta">→</span>
             </a>
@@ -67,11 +67,10 @@ useEffect(() => {
 
           {/* Redes sociais */}
           <div className="hero__redes">
-            <a href="https://github.com" target="_blank" rel="noreferrer" className="hero__rede-link">GitHub</a>
+            <a href="https://github.com/gabrieldev25789" target="_blank" rel="noreferrer" className="hero__rede-link">GitHub</a>
             <span className="hero__rede-ponto" />
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="hero__rede-link">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/gabriel-santos-ab566a305/" target="_blank" rel="noreferrer" className="hero__rede-link">LinkedIn</a>
             <span className="hero__rede-ponto" />
-            <a href="mailto:voce@email.com" className="hero__rede-link">Email</a>
           </div>
         </div>
 
