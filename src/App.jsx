@@ -19,9 +19,6 @@ function App() {
     <Skills /> 
     <Contact />
     <Footer /> 
-
-
-     <h2>Olá</h2>
     </>
 
   )
