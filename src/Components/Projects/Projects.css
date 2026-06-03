@@ -260,6 +260,135 @@
   color: var(--accent);
 }
 
+/* ── Insight Btns ──────────────────────────────────── */
+.projetos__insights-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid var(--border);
+}
+
+.projetos__insight-btn {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.3rem 0.7rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.projetos__insight-btn:hover {
+  color: var(--accent);
+  border-color: rgba(124, 106, 255, 0.3);
+}
+
+/* ── Modal Overlay ─────────────────────────────────── */
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* ── Modal Caixa ───────────────────────────────────── */
+.modal__caixa {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 520px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.modal__fechar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal__fechar:hover {
+  color: var(--text);
+}
+
+.modal__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.modal__titulo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+/* ── Modal Abas ────────────────────────────────────── */
+.modal__abas {
+  display: flex;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+}
+
+.modal__aba {
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.35rem 0.85rem;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.modal__aba:hover:not(.modal__aba--ativa) {
+  color: var(--text);
+  border-color: rgba(124, 106, 255, 0.2);
+}
+
+.modal__aba--ativa {
+  color: var(--accent);
+  border-color: rgba(124, 106, 255, 0.4);
+  background: rgba(124, 106, 255, 0.08);
+}
+
+/* ── Modal Texto ───────────────────────────────────── */
+.modal__texto {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.modal__texto strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
 /* ── Responsivo ────────────────────────────────────── */
 @media (max-width: 1024px) {
   .projetos__grid {
