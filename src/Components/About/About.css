@@ -94,6 +94,7 @@
   opacity: 0.8;
 }
 
+
 /* ── Stats ─────────────────────────────────────────── */
 .sobre__direita {
   display: flex;
@@ -191,6 +192,103 @@
   font-size: 0.85rem;
   color: var(--text);
   font-weight: 500;
+}
+
+/* ── Botão História ────────────────────────────────── */
+.sobre__historia-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  transition: color 0.2s, border-color 0.2s, transform 0.2s;
+}
+
+.sobre__historia-btn:hover {
+  color: var(--accent);
+  border-color: rgba(124, 106, 255, 0.3);
+  transform: translateY(-2px);
+}
+
+/* ── Modal ─────────────────────────────────────────── */
+.modal__overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal__caixa {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 520px;
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.modal__fechar {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.modal__fechar:hover {
+  color: var(--text);
+}
+
+.modal__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--accent);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.modal__titulo {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--text);
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+.modal__texto {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.modal__texto strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
 /* ── Responsivo ────────────────────────────────────── */
