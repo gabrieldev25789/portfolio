@@ -198,6 +198,46 @@ const projetos = [
           ))}
         </div>
 
+        {/* Em desenvolvimento */}
+        <div className="projetos__em-dev">
+          <h3 className="projetos__em-dev-titulo">🚧 Em desenvolvimento</h3>
+
+          <div className="projetos__grid">
+            {[
+              {
+                titulo: "Controle de Hábitos",
+                descricao: "App em React para registrar e acompanhar hábitos e vícios ao longo do tempo, com calendário interativo, histórico por hábito e visualização de progresso semanal.",
+                tecnologias: ["React", "JavaScript", "CSS"],
+                github: "https://github.com/gabrieldev25789/projeto-controle-habitos",
+                preview: null,
+              }
+            ].map((projeto) => (
+              <div key={projeto.titulo} className="projetos__card projetos__card--destaque">
+                <span className="projetos__badge projetos__badge--dev">🚧 Em desenvolvimento</span>
+
+                <div className="projetos__card-preview projetos__card-preview--dev">
+                  <span className="projetos__card-preview-placeholder">Em breve</span>
+                </div>
+
+                <div className="projetos__card-corpo">
+                  <div className="projetos__card-topo">
+                    <h3 className="projetos__card-titulo">{projeto.titulo}</h3>
+                    <a href={projeto.github} target="_blank" rel="noreferrer" className="projetos__card-link" title="Ver código">↗</a>
+                  </div>
+
+                  <p className="projetos__card-descricao">{projeto.descricao}</p>
+
+                  <div className="projetos__card-techs">
+                    {projeto.tecnologias.map((tech) => (
+                      <span key={tech} className="projetos__tech">{tech}</span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>        
+
         <div className="projetos__rodape">
           <a
             href="https://github.com/gabrieldev25789"
