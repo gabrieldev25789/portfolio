@@ -9,6 +9,7 @@ import print5 from "../../assets/prints/print5.jpg"
 import print6 from "../../assets/prints/print6.jpg"
 import print7 from "../../assets/prints/print7.jpg"
 import print8 from "../../assets/prints/print8.jpg"
+import print9 from "../../assets/prints/print9.png"
 
 
 function Projects() {
@@ -110,6 +111,19 @@ const projetos = [
     aprendizado: "Foi meu primeiro projeto consumindo uma API. Aprendi o básico de fetch, como acessar os dados da resposta e exibi-los na tela.",
     ideia: "Escolhi uma API simples justamente porque estava começando — queria entender o fluxo de requisição antes de partir para algo mais complexo.",
     dificuldade: "A dificuldade foi a natural de quem está fazendo isso pela primeira vez: entender a estrutura da resposta e acessar os dados certos.",
+  },
+
+    {
+    titulo: "Explorador de Países",
+    descricao: "Aplicação React que consome a REST Countries API e permite pesquisar e filtrar países por nome, região e população.",
+    tecnologias: ["React", "Vite", "CSS Modules", "API REST"],
+    github: "https://github.com/gabrieldev25789/projeto-api-paises",
+    demo: "https://projeto-api-paises.vercel.app/",
+    preview: print9,
+    destaque: false,
+    aprendizado: "Aprofundei o consumo de APIs com React, aprendi a trabalhar com múltiplos filtros em conjunto e tive meu primeiro contato prático com branches no Git.",
+    ideia: "Queria consumir uma API em react pela primeira vez, e essa é uma API simples, então comecei por ela.",
+    dificuldade: "Gerenciar os filtros de forma combinada sem que um quebrasse o outro, e entender o fluxo de branches no Git na prática.",
   },
 ]
 
